@@ -1,0 +1,619 @@
+/*DEFINING MAIN VARIABLES FOR STYLES*/
+
+:root {
+
+    /*COLOR PALETTE*/
+
+    --marineBlue: #072ac8;
+    --skyBlue: #43D2FF;
+    --pastelBlue: #a2d6f9;
+    --lightBlue: #d1edff;
+
+    --darkGray: #292e47;
+    --mainGray: #6b708d;
+    --clearGray: #f2f4fc;
+
+    --blueGray: #ecf7ff;
+
+    --mainYellow: #ffc600;
+
+}
+
+/*DEFINING BODY GENERIC STYLES*/
+
+body{
+
+    font-family: "Roboto", sans-serif;
+    background-color: #F4F6FC;
+    box-sizing: border-box;
+max-width: 1440px;
+    text-align: left;
+    color: #6B708D;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    margin: 0 auto;
+
+}
+
+/*DEFINING HEADER GENERIC STYLES*/
+
+header {
+
+    height: 700px;
+
+}
+
+/*DEFINING MENU AND NAVIGATION STYLES*/
+
+header nav{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header nav ul li{
+
+    display: inline-block;
+    margin-left: 50px;
+    text-decoration: none;
+    list-style: none;
+    color: var(--mainGray);
+
+}
+
+header nav ul li:last-of-type{
+
+    margin-right: 0;
+
+}
+
+header nav ul li:hover{
+
+    color: var(--marineBlue);
+    font-weight: bold;
+
+}
+
+/*DEFINING MAIN CONTENT IN HEADER STYLES*/
+
+h1{
+
+    font-size: 60px;
+    font-weight: 700;
+    color: #292E47;
+    margin-bottom: 20px;
+
+}
+
+header div div a:first-of-type{ 
+    
+    margin-right: 50px;
+
+}
+
+h1{
+
+    font-size: 60px;
+    font-weight: 700;
+    color: #292E47;
+    margin-bottom: 20px;
+
+}
+
+/*DEFINING MAIN HOME CONTENT INSIDE HEADER*/
+
+#home-content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    background-image: url(/img/hero-section/card-1.png), url(/img/hero-section/card-2.png) , url(/img/hero-section/hero-image.png);
+    background-repeat: no-repeat;
+    background-size: 300px, 300px, 500px;
+    background-position: center top, right bottom, right;
+}
+
+#home-content p{
+
+    max-width: 350px;
+
+}
+
+
+#home-content div {
+
+    max-width: 530px;
+
+}
+
+#home-content h1 {
+
+    max-width: 450px;
+
+}
+
+/*DEFINING A CONTAINER BOX FOR THE CTA BUTTONS IN THE HEADER*/
+
+
+#home-cta {
+
+    display: inline;
+    margin-top: 50px;
+
+}
+
+#home-cta a:hover{
+
+    color: var(--marineBlue);
+    font-weight: bold;
+
+}
+
+/*DEFINING A HORIZONTAL GRID OF CONSECUTIVE IMAGES FROM OUR CLIENTS*/
+
+#clients-bar {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
+#clients-bar {
+
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
+}
+
+/*DEFINING THE CONTAINER BOX OF OUR RECENT PROJECTS*/
+
+#recent-projects {
+
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
+#recent-projects div{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 40px;
+
+}
+
+#recent-projects h2{
+
+    font-size: 50px;
+    color: #292E47;
+
+}
+
+/*WE DISTRIBUTE THE 3 CARDS OF OUR MAIN PROJECTS USING SPACE AROUND IN THE FLEX CONTAINER*/
+
+
+#recent-projects .project-card{
+
+    background-color: white;
+    display: inline-block;
+    align-items: center;
+    height: auto;
+    gap: 50px;
+    box-shadow: 0px 38,7px 77,5px 0px rgba(0, 0, 0, 0.1);
+    
+}
+
+#recent-projects h3{
+
+    color: #292E47;
+    font-size: 40px;
+
+}
+
+/*WE USE NTH-OF-TYPE TO GO ACROSS EACH DIV WITHOUT CREATING UNNCESSESARY CLASSES OR ID*/
+
+#recent-projects .project-card div:nth-of-type(1) {
+
+    background-color: black;
+    height: 200px;  
+}
+
+
+#recent-projects .project-card div:nth-of-type(2) {
+
+    display: inline-block; 
+}
+
+#recent-projects .project-card div:nth-of-type(2) h3{
+
+    padding-left: 30px;
+    font-size: 24px;
+   
+}
+
+#recent-projects .project-card div:nth-of-type(2) p{
+
+    padding-left: 30px;
+    color: #292E47;
+   
+}
+
+#recent-projects .project-card div:nth-of-type(3) a{
+
+    color: var(--marineBlue);
+    font-weight: bold;
+    margin-top: 50px;
+
+    
+}
+
+#recent-projects .project-card div:nth-of-type(3) a{
+
+    padding-left: 30px;
+    padding-bottom: 30px;
+   
+}
+
+/*THIS SECTION NEEDS 5 DIFFERENT BACKGROUNDS, HERE WE SET THEM UP */
+
+#testimonial-section {
+
+    background-color: #292E47;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/img/testimonial-section/memoji-1.png) , url(/img/testimonial-section/memoji-2.png) , url(/img/testimonial-section/memoji-3.png) , url(/img/testimonial-section/memoji-4.png) ,  url(/img/testimonial-section/orbit.png) ;
+    background-position: top left, top right, bottom left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 150px, 150px, 150px , 150px , 100%;
+
+}
+
+/*NOW WE START WORKING OUT THE ELEMENTS INSIDE THE DIV CONTAINER*/
+
+#testimonial-section h2 {
+
+    color: white;
+    font-size: 40px;
+
+}
+
+#testimonial-section blockquote{
+
+    color: var(--mainYellow);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+/*HERE WE CREATE A DIV TO CONTAIN THE PROFILE PICTURE TO MAKE IT ROUND EFFECTIVELY*/
+
+#testimonial-section img {
+
+    width: 100px;
+
+}
+
+#testimonial-section div {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+#testimonial-section div div:nth-of-type(1) {
+
+    background-image: url(/img/testimonial-section/profile.png);
+    background-size: 150px;
+    background-position: center;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+    background-repeat: no-repeat;
+
+}
+
+#testimonial-section div div:nth-of-type(2) {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: 150px;
+
+}
+
+#testimonial-section div div:nth-of-type(2) h4{
+
+    margin-bottom: 0;
+    color: var(--pastelBlue);
+    font-weight: 500;
+
+    
+}
+
+#testimonial-section div div:nth-of-type(2) p{
+
+    margin-top: 0;
+    color: white;
+
+}
+
+#our-services {
+
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
+#our-services div{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 40px;
+
+}
+
+#our-services h2{
+
+    font-size: 50px;
+    color: #292E47;
+
+}
+
+#our-services .service-card{
+
+    background-color: white;
+    display: inline-block;
+    align-items: center;
+    height: auto;
+    gap: 50px;
+    
+}
+
+#our-services h3{
+
+    color: #292E47;
+    font-size: 24px;
+
+}
+
+#our-services .service-card div:nth-of-type(1) {
+
+    height: 120px;
+    display: flex;
+    
+     
+}
+
+#our-services .service-card:nth-child(1) div:nth-of-type(1) div{
+
+    background-image: url(/img/services-section/icons/1.svg);
+    border-radius: 200px;
+    background-size: 50px;
+    background-color: #ECF7FF;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+    background-position: center;
+    margin-left: 30px;
+    margin-top: 30px;
+     
+}
+
+#our-services .service-card:nth-child(2) div:nth-of-type(1) div{
+
+    background-image: url(/img/services-section/icons/2.svg);
+    border-radius: 200px;
+    background-size: 50px;
+    background-color: #ECF7FF;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+    background-position: center;
+    margin-left: 30px;
+    margin-top: 30px;
+     
+}
+
+#our-services .service-card:nth-child(3) div:nth-of-type(1) div{
+
+    background-image: url(/img/services-section/icons/3.svg);
+    border-radius: 200px;
+    background-size: 50px;
+    background-color: #ECF7FF;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+    background-position: center;
+    margin-left: 30px;
+    margin-top: 30px;
+     
+}
+
+#our-services .service-card div:nth-of-type(2) {
+
+    display: inline-block; 
+}
+
+#our-services .service-card div:nth-of-type(2) h3{
+
+    padding-left: 30px;
+    font-size: 24px;
+    padding-right: 30px;
+   
+}
+
+#our-services .service-card div:nth-of-type(2) p{
+
+    padding-left: 30px;
+    color: #292E47;
+    padding-right: 30px;
+   
+}
+
+#our-services .service-card div:nth-of-type(3) a{
+
+    color: var(--marineBlue);
+    font-weight: bold;
+    margin-top: 50px;
+ 
+}
+
+#our-services .service-card div:nth-of-type(3) a{
+
+    padding-left: 30px;
+    padding-bottom: 30px;
+   
+}
+
+#contact-section {
+
+    background-color: var(--mainYellow);
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#contact-section h2 {
+
+    color: black;
+    font-size: 40px;
+    margin-bottom: 0;
+
+}
+
+#contact-section p {
+
+    color: black;
+    font-size: 20px;
+}
+
+#contact-section form {
+
+    margin-top: 20px;
+
+}
+
+#contact-section input {
+
+    border-style: none;
+    height: 80px;
+    width: 390px;
+    margin-right: 5px;
+}
+
+#contact-section input[type=email] {
+
+    background-position: 20px 25px;
+    background-repeat: no-repeat;
+    background-image: url(/img/newsletter/icon/mail.svg);
+    padding-left: 60px;
+    font-size: 17px;
+
+}
+
+#contact-section button {
+
+    background-color: var(--marineBlue);
+    color: white;
+    border-style: none;
+    height: 80px;
+    width: 195px;
+    margin-left: 5px;
+    font-size: 17px;
+
+}
+
+#contact-section button:hover {
+
+    background-color: var(--mainGray);
+}
+
+footer {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    
+}
+
+footer ul {
+
+    list-style: none;
+    max-width: 400px;
+    text-align: left;
+
+}
+
+footer ul li {
+
+    color: var(--mainGray);
+    font-size: 17px;
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+}
+
+footer ul li div{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+footer p {
+
+    color: var(--mainGray);
+    font-size: 17px;
+
+}
+
+footer a:hover {
+
+    color: var(--marineBlue);
+    font-weight: bold;
+
+}
+
+.main-button{
+
+    background-color: var(--marineBlue);
+    color:white;
+    padding: 20px;
+
+}
+
+.main-button:hover {
+
+    background-color: var(--mainYellow);
+
+}
+
+
+
+
+
+
+
+
+
+
