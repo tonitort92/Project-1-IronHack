@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
+    <script src="/scripts/functions.js" ></script>
     <title>Circle</title>
 </head>
 <!-- HEAD END -->
@@ -17,12 +18,21 @@
         <nav>
             <img src="/img/logos/circle.svg">
 <!-- WE START BUILDING THE MENU -->
+                <ul id="hamburguer-menu-closed"></ul>
+                <ul id="hamburguer-menu-open">
+                    <li><a>Home</a></li>
+                    <li><a>Projects</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            
+<!-- WE START BUILDING THE MENU -->
             <ul id="menu">
                 <li><a>Home</a></li>
                 <li><a>Projects</a></li>
                 <li><a>Services</a></li>
             </ul>
-            <ul>
+            <ul id="cta-menu">
                 <li><a class="main-button">Contact Us</a></li>
             </ul>
         </nav>
@@ -84,7 +94,7 @@
 <!-- WE START DEFINING THE TESTIMONIALS SECTION -->
     <section id="testimonial-section">
         <h2>Hear what our clients have to say</h2>
-        <blockquote>"Circle helped us through every stage of our startup.<br>We really enjoyed working with you."</blockquote>
+        <blockquote>"Circle helped us through every stage of our startup.We really enjoyed working with you."</blockquote>
 <!-- AGAIN WE CREATE A DIV STRUCTURE TO HAVE CONTROL OVER THE CARDS --> 
         <div>
             <div></div>
@@ -172,3 +182,4 @@
     </footer>
 </body>
 </html>
+
